@@ -6,4 +6,9 @@ echo "[-----------]"
 echo "[----RUN----]"
 echo "[-----------]"
 
+# Run the script
 find build/  -name "${1}"  -not -path '*dSYM/**' -prune -exec '{}' \;
+
+# Find the corresponding answer in the answer file
+padded_num=$(printf "%03d" "${1}")
+grep "Problem ${padded_num}" Answers.txt
