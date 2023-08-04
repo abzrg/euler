@@ -21,7 +21,7 @@ int main(void)
         if (n % 3 == 0 || n % 5 == 0)
             sum += n;
 
-    printf("Problem 001: %d\n", sum);
+    printf("Problem 001: %u\n", sum);
 
     return 0;
 }
