@@ -13,7 +13,9 @@ What is the 10001st prime number?
 #include <math.h>
 
 
+#define NTH_PRIME 10001UL
 #define PRIME_START 3UL
+
 
 int main(void)
 {
@@ -35,7 +37,7 @@ int main(void)
         if (is_prime)
             order++;
 
-        if (order == 10001)
+        if (order == NTH_PRIME)
             break;
 
         num += 2;
