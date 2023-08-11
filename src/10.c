@@ -1,9 +1,5 @@
-/* 10. Summation of Primes
-
-The sum of the primes below 10 is 2 + 3 + 5 + 7 = 17.
-Find the sum of all the primes below two million.
-
-*/
+// 010. Summation of Primes
+// src: https://projecteuler.net/problem=10
 
 #include <stdio.h>
 #include <stdbool.h>
@@ -13,6 +9,9 @@ Find the sum of all the primes below two million.
 #define MAX_RANGE 2000000UL
 
 bool is_prime(unsigned long n);
+
+
+//---<main>---------------------------------------
 
 
 int main(void)
@@ -31,11 +30,12 @@ int main(void)
 }
 
 
+//---<end main>-----------------------------------
+
+
 bool is_prime(unsigned long n)
 {
-    for (size_t i = 3, max_search = (size_t)sqrt(n) + 1;
-            i < max_search;
-            i += 2) {
+    for (size_t i = 3, limit = sqrt(n) + 1; i < limit; i += 2) {
         if (n % i == 0) {
             return false;
         }

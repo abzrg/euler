@@ -1,12 +1,5 @@
-/* 7. 10001st Prime
-
-By listing the first six prime numbers: 2, 3,
-5, 7, 11, and 13, we can see that the 6th prime
-is 13.
-
-What is the 10001st prime number?
-
-*/
+// 007. 10001st Prime
+// src: https://projecteuler.net/problem=7
 
 #include <stdio.h>
 #include <stdbool.h>
@@ -15,6 +8,9 @@ What is the 10001st prime number?
 
 #define NTH_PRIME 10001UL
 #define PRIME_START 3UL
+
+
+//---< main >-------------------------------------
 
 
 int main(void)
@@ -34,11 +30,13 @@ int main(void)
             }
         }
 
-        if (is_prime)
+        if (is_prime) {
             order++;
+        }
 
-        if (order == NTH_PRIME)
+        if (order == NTH_PRIME) {
             break;
+        }
 
         num += 2;
     }

@@ -7,6 +7,7 @@
 #include <stdbool.h>
 #include <math.h>
 
+
 // For timing (on macos)
 #define TIME
 

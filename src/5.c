@@ -1,14 +1,5 @@
-/* 5. Smallest Multiple
-
-2520 is the smallest number that can be divided
-by each of the numbers from 1 to 10 without any
-remainder.
-
-What is the smallest positive number that is
-evenly divisible (divisible with no remainder)
-by all of the numbers from 1 to 20?
-
-*/
+// 005. Smallest Multiple
+// src: https://projecteuler.net/problem=5
 
 #include <stdio.h>
 #include <stdbool.h>
@@ -21,6 +12,9 @@ by all of the numbers from 1 to 20?
 #define MAX_RANGE 20UL
 
 
+//---< main >-------------------------------------
+
+
 int main(void)
 {
     unsigned num = START;
@@ -29,8 +23,9 @@ int main(void)
     // (There is no upper limit for num)
     while (num >= START) {
         for (size_t rem = MAX_RANGE; rem > MIN_RANGE; rem--) {
-            if (num % rem != 0)
+            if (num % rem != 0) {
                 break;
+            }
 
             if (rem == 2) {
                 printf("ans = %u\n", num);

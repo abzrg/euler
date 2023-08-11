@@ -1,4 +1,4 @@
-// 11. Largest Product in a Grid
+// 011. Largest Product in a Grid
 // src: https://projecteuler.net/problem=11
 
 #include <stdio.h>
@@ -56,8 +56,7 @@ unsigned greatest_quartet_mult(grid_t grid)
     unsigned greatest_product = 1;
 
     // Looping over rows
-    // Why minus 3? last grouping happens when we are 4
-    // index away from the end
+    // Why minus 3? last grouping happens when we are 4 index away from the end
     for (size_t i = 0; i < GRID_HEIGHT - 3; i++) {
         for (size_t j = 0; j < GRID_WIDTH - 3; j++) {
             unsigned mult = grid[i][j] * grid[i][j+1] * grid[i][j+2] * grid[i][j+3];
