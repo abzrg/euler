@@ -9,7 +9,9 @@
 
 
 // For timing (on macos)
+#if defined(__APPLE__)
 #define TIME
+#endif
 
 #ifdef TIME
 #include <mach/mach_time.h>
