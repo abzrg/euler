@@ -2,12 +2,18 @@
 
 set -e
 
-echo "[-----------]"
-echo "[----RUN----]"
-echo "[-----------]"
+echo ""
+echo "--- [RUN]: Starting ..."
+echo ""
 
 # Run the script
 find build/  -name "${1}"  -not -path '*dSYM/**' -prune -exec '{}' \;
 
 # Find the corresponding answer in the answer file
-grep "Problem ${1}" Answers.txt
+printf "%s (Answer)\n" "`grep \"Problem ${1}\" Answers.txt`"
+
+
+echo ""
+echo "--- [RUN]: End."
+echo ""
+
