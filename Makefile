@@ -19,8 +19,8 @@ $(BUILDDIR)/%: $(SRCDIR)/%.c $(HEADERS)
 	$(CC) $(CFLAGS) $(CPPFLAGS) -o $@ $<
 
 # For isolated targets
-%: $(SRCDIR)/%.c $(HEADERS)
-	$(CC) $(CFLAGS) $(CPPFLAGS) -o $(BUILDDIR)/$@ $<
+$(BUILDDIR)/%: $(SRCDIR)/%.c $(HEADERS)
+	$(CC) $(CFLAGS) $(CPPFLAGS) -o $@ $<
 
 clean:
 	$(RM) -rf $(BUILDDIR)/*
