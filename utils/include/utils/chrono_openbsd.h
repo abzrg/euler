@@ -8,7 +8,7 @@
 
 static struct timeval start_time = {}; // NOLINT
 
-static void chrono_start(void)
+inline static void chrono_start(void)
 {
     CHRONO_PRINT_START();
 
@@ -16,7 +16,7 @@ static void chrono_start(void)
     gettimeofday(&start_time, NULL);
 }
 
-static void chrono_stop(void)
+inline static void chrono_stop(void)
 {
     // Get the current time after executing the function
     struct timeval chrono_end_time = {};

@@ -7,7 +7,7 @@
 
 static uint64_t chrono_start_time = { 0 }; // NOLINT
 
-static void chrono_start(void)
+inline static void chrono_start(void)
 {
     CHRONO_PRINT_START();
 
@@ -15,7 +15,7 @@ static void chrono_start(void)
     chrono_start_time = mach_absolute_time();
 }
 
-static void chrono_stop(void)
+inline static void chrono_stop(void)
 {
     // Get the current time after executing the function
     uint64_t chrono_end_time = mach_absolute_time();

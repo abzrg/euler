@@ -6,7 +6,7 @@
 
 LARGE_INTEGER chrono_start_time;
 
-static void chrono_start(void)
+inline static void chrono_start(void)
 {
     CHRONO_PRINT_START();
 
@@ -14,7 +14,7 @@ static void chrono_start(void)
     QueryPerformanceCounter(&start_time);
 }
 
-static void chrono_stop(void)
+inline static void chrono_stop(void)
 {
     // Get the current time after executing the function
     LARGE_INTEGER chrono_end_time;

@@ -2,6 +2,7 @@
 #include <stdint.h>
 #include <stdio.h>
 
+#define NOCHRONO
 #include "utils/chrono.h"
 
 
