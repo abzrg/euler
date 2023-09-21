@@ -34,7 +34,7 @@ int main(void)
     // The bottom right cell contains the number of paths
     uint64_t bottom_right_paths = grid_paths[NUMCOLS - 1][NUMROWS - 1];
 
-    printf("Problem 015: %ld\n", bottom_right_paths);
+    printf("Problem 015: %lld\n", bottom_right_paths);
 
     return 0;
 }
