@@ -1,3 +1,6 @@
+// 017: Number Letter Counts
+// src: https://projecteuler.net/problem=17
+
 #include <assert.h>
 #include <stdint.h>
 #include <stdio.h>

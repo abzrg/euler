@@ -1,3 +1,6 @@
+// 015: Lattice Paths
+// src: https://projecteuler.net/problem=15
+
 #include <stdint.h>
 #include <stdio.h>
 

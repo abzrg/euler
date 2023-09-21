@@ -1,3 +1,6 @@
+// 014: Longest Collatz Sequence
+// src: https://projecteuler.net/problem=14
+
 #include <stdbool.h>
 #include <stdint.h>
 #include <stdio.h>

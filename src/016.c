@@ -1,3 +1,6 @@
+// 016: Power Digit Sum
+// src: https://projecteuler.net/problem=16
+
 #include <stdint.h>
 #include <stdio.h>
 
